@@ -1,0 +1,1 @@
+{"uuid":"f113143d-da97-42cc-a57e-8775a099a43e","name":"apitests.GetAssetsTest","children":["4d0d95e5-b71a-47e8-9f71-3a33c696c3a0"],"befores":[{"name":"setup","status":"passed","stage":"finished","description":"","steps":[],"attachments":[],"parameters":[],"start":1720085936515,"stop":1720085938946}],"afters":[],"links":[],"start":1720085936481,"stop":1720085939314}
