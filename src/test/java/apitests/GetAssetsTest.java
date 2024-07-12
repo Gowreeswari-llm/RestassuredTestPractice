@@ -19,7 +19,7 @@ public class GetAssetsTest extends MyTestSetup {
     private static final Logger log = LogManager.getLogger(GetAssetsTest.class);
     
 
-    @Test(description = "Test the /sainapse/about endpoint")
+    @Test(threadPoolSize = 3, invocationCount = 3, timeOut = 10000)
     void testAboutPageInfo() {
         // Get the about page info from the API: /sainapse/about
         // Validate the response code is 200
