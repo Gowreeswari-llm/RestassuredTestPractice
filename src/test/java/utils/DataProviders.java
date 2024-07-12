@@ -26,4 +26,9 @@ public class DataProviders {
 
         return dataProvider;
     }
+
+    @DataProvider(name="icNameData")
+    public static Object[] getIcNames() {
+        return new Object[] {"OutlookMailIC", "GenericEailIC_singlePredictor", "Recommend_SharepointEDA"};
+    }
 }

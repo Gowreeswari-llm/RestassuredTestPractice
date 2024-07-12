@@ -11,6 +11,7 @@ import org.apache.logging.log4j.LogManager;
 
 import io.restassured.response.Response;
 import utils.MyTestSetup;
+import utils.LogUtils;
 
 
 public class GetAssetsTest extends MyTestSetup {
@@ -23,6 +24,11 @@ public class GetAssetsTest extends MyTestSetup {
         // Get the about page info from the API: /sainapse/about
         // Validate the response code is 200
         // Validate the response body contains the text "Sainapse"
+
+
+        // Inside your test method
+        LogUtils.logRequestDetails("GET", "/sainapse/about", "Authorization: " + bearerToken, null);
+
         Response response = given()
                 .header("Authorization", bearerToken)
                 .when()
@@ -40,12 +46,14 @@ public class GetAssetsTest extends MyTestSetup {
     // add test for API: /sainapse/information_channel/OutlookMailIC
     // Validate the response code is 200
     // Validate the response body contains the text "result"
-    @Test
-    public void testOutlookMailIC() {
+    @Test(dataProvider = "icNameData", dataProviderClass = utils.DataProviders.class)
+    public void testGetICDetails(String icName) {
+        LogUtils.logRequestDetails("GET", "/sainapse/information_channel/{name}", "Authorization: " + bearerToken, null);
         Response response = given()
                 .header("Authorization", bearerToken)
+                .pathParam("name", icName)
                 .when()
-                .get("/sainapse/information_channel/OutlookMailIC")
+                .get("/sainapse/information_channel/{name}")
                 .then()
                 .statusCode(200)
                 .extract()
