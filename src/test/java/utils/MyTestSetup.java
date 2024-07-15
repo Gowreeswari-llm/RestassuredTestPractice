@@ -6,6 +6,7 @@ import org.testng.annotations.BeforeClass;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
+import org.testng.annotations.BeforeSuite;
 
 import java.util.ResourceBundle;
 
@@ -20,7 +21,7 @@ public class MyTestSetup {
         // return the properties object
     }
 
-    @BeforeClass
+    @BeforeSuite
     public static void setup() {
         String base_URI = getBaseURL().getString("base_url");
 //        System.out.println("Attempting to connect to base URL: " + baseURI);
