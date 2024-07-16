@@ -1,0 +1,114 @@
+2024-07-15 15:34:09 INFO  UILoginTest:44 - login page test
+2024-07-15 15:36:34 INFO  UILoginTest:44 - login page test
+2024-07-15 16:09:05 INFO  MyTestSetup:64 - io.restassured.internal.RestAssuredResponseImpl@eb6ec6
+2024-07-15 16:09:40 INFO  MyTestSetup:64 - io.restassured.internal.RestAssuredResponseImpl@1f3b992
+2024-07-15 16:09:46 INFO  GetAssetsTest:32 - io.restassured.internal.RestAssuredResponseImpl@6d969330
+2024-07-15 16:13:43 INFO  MyTestSetup:59 - io.restassured.internal.RestAssuredResponseImpl@60d6fdd4
+2024-07-15 16:13:44 INFO  GetAssetsTest:32 - io.restassured.internal.RestAssuredResponseImpl@777d0bc3
+2024-07-15 16:13:56 INFO  UITest:26 - Test ran successfully
+2024-07-15 17:24:41 INFO  UITest:29 - Test ran successfully
+2024-07-15 17:25:07 INFO  UITest:29 - Test ran successfully
+2024-07-15 17:25:44 INFO  UITest:29 - Test ran successfully
+2024-07-16 16:05:35 INFO  UITest:18 - Test ran successfully
+2024-07-16 16:46:39 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@34d45ec0
+2024-07-16 16:46:39 INFO  PetTest:19 - Getting pet by ID: 1
+2024-07-16 16:46:40 INFO  PetTest:49 - io.restassured.internal.RestAssuredResponseImpl@d257579
+2024-07-16 16:47:02 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@3902bd2c
+2024-07-16 16:47:02 INFO  PetTest:19 - Getting pet by ID: 1
+2024-07-16 16:47:03 INFO  PetTest:49 - io.restassured.internal.RestAssuredResponseImpl@3d0cac1f
+2024-07-16 16:47:31 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@66f28a1f
+2024-07-16 16:47:31 INFO  PetTest:19 - Getting pet by ID: 890
+2024-07-16 16:47:33 INFO  PetTest:49 - io.restassured.internal.RestAssuredResponseImpl@49e4c2d5
+2024-07-16 16:49:44 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@157ec23b
+2024-07-16 16:49:44 INFO  PetTest:19 - Getting pet by ID: 7777777
+2024-07-16 16:49:45 INFO  PetTest:49 - io.restassured.internal.RestAssuredResponseImpl@4a2e7bcb
+2024-07-16 16:52:12 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@eb6ec6
+2024-07-16 16:52:12 INFO  PetTest:19 - Getting pet by ID: 7777777
+2024-07-16 16:52:13 INFO  PetTest:50 - io.restassured.internal.RestAssuredResponseImpl@3e8b3b79
+2024-07-16 16:56:11 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@6b63e6ad
+2024-07-16 16:56:11 INFO  PetTest:31 - Getting pet by status: available
+2024-07-16 17:04:01 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@40a72ecd
+2024-07-16 17:04:01 INFO  PetTest:31 - Getting pet by status: available
+2024-07-16 17:04:01 INFO  PetTest:31 - Getting pet by status: pending
+2024-07-16 17:04:01 INFO  PetTest:31 - Getting pet by status: sold
+2024-07-16 17:06:02 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@47ac613b
+2024-07-16 17:06:02 INFO  PetTest:31 - Getting pet by status: available
+2024-07-16 17:06:03 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@7b477141
+2024-07-16 17:06:03 INFO  PetTest:31 - Getting pet by status: pending
+2024-07-16 17:06:04 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@3238e2aa
+2024-07-16 17:06:04 INFO  PetTest:31 - Getting pet by status: sold
+2024-07-16 17:06:06 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@7efa3f63
+2024-07-16 17:06:55 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@2152ab30
+2024-07-16 17:06:55 INFO  PetTest:31 - Getting pet by status: available
+2024-07-16 17:06:57 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@4364863
+2024-07-16 17:06:57 INFO  PetTest:31 - Getting pet by status: pending
+2024-07-16 17:06:58 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@671ea6ff
+2024-07-16 17:06:58 INFO  PetTest:31 - Getting pet by status: sold
+2024-07-16 17:07:00 INFO  PetTest:33 - io.restassured.internal.RestAssuredResponseImpl@45b32dfe
+2024-07-16 17:08:31 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@2152ab30
+2024-07-16 17:08:31 INFO  PetTest:19 - Getting pet by ID: 7777777
+2024-07-16 17:08:33 INFO  PetTest:47 - io.restassured.internal.RestAssuredResponseImpl@1015a4b9
+2024-07-16 17:08:33 INFO  PetTest:19 - Getting pet by ID: 8888888
+2024-07-16 17:08:34 INFO  PetTest:47 - io.restassured.internal.RestAssuredResponseImpl@217bf99e
+2024-07-16 17:08:34 INFO  PetTest:19 - Getting pet by ID: 9999999
+2024-07-16 17:08:35 INFO  PetTest:47 - io.restassured.internal.RestAssuredResponseImpl@1319bc2a
+2024-07-16 17:17:43 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@6b63e6ad
+2024-07-16 17:17:43 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:17:44 INFO  PetTest:75 - io.restassured.internal.RestAssuredResponseImpl@40fa8766
+2024-07-16 17:18:42 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@66f28a1f
+2024-07-16 17:18:42 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:18:43 INFO  PetTest:75 - io.restassured.internal.RestAssuredResponseImpl@5befbac1
+2024-07-16 17:19:35 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@6a756082
+2024-07-16 17:19:35 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:19:36 INFO  PetTest:75 - io.restassured.internal.RestAssuredResponseImpl@75babb67
+2024-07-16 17:21:08 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@526a9908
+2024-07-16 17:21:08 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:21:10 INFO  PetTest:75 - io.restassured.internal.RestAssuredResponseImpl@3e4e8fdf
+2024-07-16 17:21:10 INFO  PetTest:78 - -121031
+2024-07-16 17:21:10 INFO  PetTest:60 - Uploading image for pet id: -121031
+2024-07-16 17:21:13 INFO  PetTest:92 - io.restassured.internal.RestAssuredResponseImpl@2faa55bb
+2024-07-16 17:21:13 INFO  PetTest:21 - Getting pet by ID: -121031
+2024-07-16 17:21:14 INFO  PetTest:96 - io.restassured.internal.RestAssuredResponseImpl@6424e613
+2024-07-16 17:22:53 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@3ce443f9
+2024-07-16 17:22:53 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:22:55 INFO  PetTest:75 - io.restassured.internal.RestAssuredResponseImpl@188598ad
+2024-07-16 17:22:55 INFO  PetTest:78 - -121008
+2024-07-16 17:22:55 INFO  PetTest:60 - Uploading image for pet id: -121008
+2024-07-16 17:22:57 INFO  PetTest:92 - io.restassured.internal.RestAssuredResponseImpl@6dcab9d9
+2024-07-16 17:22:57 INFO  PetTest:21 - Getting pet by ID: -121008
+2024-07-16 17:22:59 INFO  PetTest:96 - io.restassured.internal.RestAssuredResponseImpl@2c9d90fc
+2024-07-16 17:22:59 INFO  PetTest:97 - null
+2024-07-16 17:25:37 INFO  MyTestSetup:51 - io.restassured.internal.RestAssuredResponseImpl@60a19573
+2024-07-16 17:25:37 INFO  PetTest:46 - Creating a new pet in the store
+2024-07-16 17:25:38 INFO  PetTest:70 - {
+    "id": 9223372036854654830,
+    "name": "mypet11",
+    "photoUrls": [
+        ""
+    ],
+    "tags": [
+        {
+            "id": 0,
+            "name": ""
+        }
+    ],
+    "status": "available"
+}
+2024-07-16 17:25:39 INFO  PetTest:73 - -120978
+2024-07-16 17:25:39 INFO  PetTest:60 - Uploading image for pet id: -120978
+2024-07-16 17:25:41 INFO  PetTest:87 - {
+    "code": 200,
+    "type": "unknown",
+    "message": "additionalMetadata: null\nFile uploaded to ./2024-07-15_15-09.png, 200416 bytes"
+}
+2024-07-16 17:25:41 INFO  PetTest:21 - Getting pet by ID: -120978
+2024-07-16 17:25:42 INFO  PetTest:91 - {
+    "code": 1,
+    "type": "error",
+    "message": "Pet not found"
+}
+2024-07-16 17:25:42 INFO  PetTest:92 - null
+2024-07-16 17:34:59 INFO  UITest:17 - Test ran successfully
+2024-07-16 17:50:12 INFO  UITest:17 - Test ran successfully
+2024-07-16 17:51:43 INFO  UITest:22 - Brands
+2024-07-16 17:51:43 INFO  UITest:23 - Test ran successfully

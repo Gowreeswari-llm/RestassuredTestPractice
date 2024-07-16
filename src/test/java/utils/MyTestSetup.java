@@ -2,7 +2,8 @@ package utils;
 
 import static io.restassured.RestAssured.*;
 
-import org.testng.annotations.BeforeClass;
+import org.apache.logging.log4j.LogManager;
+import org.apache.logging.log4j.Logger;
 
 import io.restassured.http.ContentType;
 import io.restassured.response.Response;
@@ -12,7 +13,7 @@ import java.util.ResourceBundle;
 
 public class MyTestSetup {
 
-    protected static String bearerToken;
+    private static final Logger log = LogManager.getLogger(MyTestSetup.class);
 
     public static ResourceBundle getBaseURL() {
         // add the code to read the properties file here
@@ -24,25 +25,30 @@ public class MyTestSetup {
     @BeforeSuite
     public static void setup() {
         String base_URI = getBaseURL().getString("base_url");
-//        System.out.println("Attempting to connect to base URL: " + baseURI);
+        String user_name = getBaseURL().getString("username");
+        String pwd = getBaseURL().getString("password");
+
         baseURI = base_URI;
-        // add the code to login here and keep the bearer token to login in the other test cases
-        // payload for login: { "auth_type": "", "email": "admin@sainapse.ai", "password": "Admin@123"}
-        // API: /sainapse/sign_in
-        // Store the bearer token in a static variable to use in other test cases
-        String loginPayload = "{ \"auth_type\": \"\", \"email\": \"admin@sainapse.ai\", \"password\": \"Admin@123\"}";
+
+        // add the code to login here and keep the session id to login in the other test cases
+        // API: https://petstore.swagger.io/v2/user/login?username=testuser1&password=Welcome2user%40123
+        // {
+        //  "code": 200,
+        //  "type": "unknown",
+        //  "message": "logged in user session:1721035085061"
+        //}
         Response response = given()
                 .contentType(ContentType.JSON)
-                .body(loginPayload)
-                .post("/sainapse/sign_in")
+                .body("{\n" +
+                        "  \"username\": \"" + user_name + "\",\n" +
+                        "  \"password\": \"" + pwd + "\"\n" +
+                        "}")
+                .when()
+                .post("/user/login")
                 .then()
-                .statusCode(200)
                 .extract()
                 .response();
-
-        bearerToken = response.getHeader("Authorization");
-        System.out.println("Bearer token: " + bearerToken);
-
+        log.info(response);
     }
 
 }
