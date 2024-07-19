@@ -19,15 +19,20 @@ public class PetEndpoints {
     // the functions will be static so they can be called without creating an object of the class
 
     public static Response getPetByID(int petId) {
-        log.info("Getting pet by ID: " + petId);
-        LogUtils.logRequestDetails("GET", Routes.PET_ID, null, null);
-        Response response = given()
-                .when()
-                .get(Routes.PET_ID, petId)
-                .then()
-                .extract()
-                .response();
-        return response;
+        try {
+            log.info("Getting pet by ID: " + petId);
+            LogUtils.logRequestDetails("GET", Routes.PET_ID, null, null);
+            Response response = given()
+                    .when()
+                    .get(Routes.PET_ID, petId)
+                    .then()
+                    .extract()
+                    .response();
+            return response;
+        } catch (Exception e) {
+            log.error("Error getting pet by ID: " + petId);
+            return null;
+        }
     }
 
     public static Response getPetByStatus(String status) {

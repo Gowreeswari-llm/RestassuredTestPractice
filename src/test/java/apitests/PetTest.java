@@ -25,6 +25,7 @@ public class PetTest extends MyTestSetup {
         // call the getPetByStatus function from PetEndpoints class
         // validate the response code is 200
         Response response = PetEndpoints.getPetByStatus(petStatus);
+        Assert.assertNotNull(response, "Response is null for status: " + petStatus);
         log.info(response.body().prettyPrint());
         Assert.assertEquals(response.getStatusCode(), 200);
         // validate the responce contains the more than 1 objects
@@ -39,6 +40,7 @@ public class PetTest extends MyTestSetup {
         // validate the pet id from the response
         // validate the status of the pet is available
         Response response = PetEndpoints.getPetByID(petId);
+        Assert.assertNotNull(response, "Response is null for petId: " + petId);
         log.info(response.body().prettyPrint());
         Assert.assertEquals(response.getStatusCode(), 200);
         Assert.assertEquals(response.jsonPath().getInt("id"), petId );
